@@ -1,0 +1,308 @@
+body{
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 100px;
+    background-color: #252525;
+}
+
+nav{
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 70px;
+    height: 100%;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+i {
+    color: white;
+}
+
+ul{
+    padding: 20px;
+    list-style: none;
+}
+
+li > a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.hide-or-show-text {
+    display: none;
+}
+
+nav:hover{
+    width: 8%;
+}
+
+nav:hover .hide-or-show-text {
+    transition: 3s;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.nav-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+    height: 10px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#other-link-nav{
+    margin-left: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+#my-presentation{
+    margin-top: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 1000px;
+}
+
+.name-animation{
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-weight: bold;
+}
+
+#first-page > p{
+    color: white;
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+#particles-js {
+    margin-left: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 99%;
+}
+
+#particles-js:hover{
+    margin-left: 1%;
+}
+
+/*Page de Skills*/
+
+#skills-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.title-skills {
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    margin-bottom: -5px;
+}
+
+.text-skills{
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#right-skills-container {
+    width: 50%;
+    padding-top: 5%;
+}
+
+.progress-skills-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#progress-bar-html {
+    margin: 20px;
+    width: 90%;
+    height: 50px;
+    position: relative;
+}
+
+#progress-bar-css {
+    margin: 20px;
+    width: 90%;
+    height: 50px;
+    position: relative;
+}
+
+#progress-bar-php {
+    margin: 20px;
+    width: 90%;
+    height: 50px;
+    position: relative;
+}
+
+#progress-bar-java {
+    margin: 20px;
+    width: 90%;
+    height: 50px;
+    position: relative;
+}
+
+#progress-bar-lua {
+    margin: 20px;
+    width: 90%;
+    height: 50px;
+    position: relative;
+}
+
+.progress-skills-container > i {
+    padding-left: 20px;
+}
+
+.progress-skills-container > img {
+    padding-left: 20px;
+}
+
+/*Css de la page portfolio*/
+
+#work-container > h1 {
+    color: white;
+    text-align: center;
+}
+
+#work-container > h3 {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box-container > .work-box{
+    width: 450px;
+    background-color: #494949;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box-container > .work-box:hover{
+    transform: scale(1.08);
+    transition: 1s;
+}
+
+.box-container > .work-box > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box-container > .work-box > .work-box-text{
+    color: white;
+}
+
+/*Css de la page de contact*/
+
+#contact-form-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form-container > iframe{
+    width: 40%;
+    height: 646px;
+}
+
+.contact-form{
+    background-color: #494949;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.contact-form-input{
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.contact-form-input > input{
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form-input > textarea{
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.contact-form-input > button{
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: #494949;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+}
