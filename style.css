@@ -306,3 +306,45 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100 % {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100 % {
+        opacity: 0;
+    }
+}
+
+.popup {
+    visibility: hidden;
+    position: absolute;
+    width: 70%;
+    background: #494949;
+    z-index: 999;
+    animation: ease-in 1.5s fadeIn running;
+    border-radius : 10px;
+}
+
+.popup > img {
+    width: 70%;
+}
+
+.popup > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 5px;
+    font-size: 1.5em;
+}

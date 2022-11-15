@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,15 +21,15 @@
                 <li class="hide-or-show-text"><a href="index.html">Home</a></li>
             </div>
             <div class="nav-detail">
-                <i class="fa-solid fa-code fa-lg"></i>
+                <a href="skills.html"><i class="fa-solid fa-code fa-lg"></i></a>
                 <li class="hide-or-show-text"><a href="skills.html">Skills</a></li>
             </div>
             <div class="nav-detail">
-                <i class="fa-solid fa-book fa-lg"></i>
+                <a href="portfolio.html"><i class="fa-solid fa-book fa-lg"></i></a>
                 <li class="hide-or-show-text"><a href="portfolio.html">Portfolio</a></li>
             </div>
             <div class="nav-detail">
-                <i class="fa-solid fa-envelope fa-lg"></i>
+                <a href="contact.html"><i class="fa-solid fa-envelope fa-lg"></i></a>
                 <li class="hide-or-show-text"><a href="contact.html">Contact</a></li>
             </div>
         </ul>
@@ -45,7 +45,13 @@
 
         <h3>In Compagny</h3>
         <div class="box-container">
-            <div class="work-box">
+            <div class="popup">
+                <button class="close-popup" onclick="hidePopup()"><i class="fa-solid fa-xmark fa-xxl"></i></button>
+                <h1>This is a popup</h1>
+                <img src="img/e-musicbase.png">
+                <h3>Details : </h3>
+            </div>
+            <div class="work-box" onclick="openPopup()">
                 <img src="img/veille.png" alt="monitoring image">
                 <div class="work-box-text">
                     <h2>Monitoring tool</h2>
@@ -66,6 +72,14 @@
                 <div class="work-box-text">
                     <h2>Shared App Analytics</h2>
                     <p>This tools allow employee to see the different data linked to the shared app with click tracker</p>
+                </div>
+            </div>
+
+            <div class="work-box">
+                <img src="img/e-musicbase.png" alt="analytics of shared app">
+                <div class="work-box-text">
+                    <h2>Project E-Music</h2>
+                    <p>E-Music is a website for a muscial school that allow member to manage what they want to do in the school</p>
                 </div>
             </div>
         </div>
@@ -115,4 +129,5 @@
 
 </body>
 <script src="https://kit.fontawesome.com/9626785de0.js" crossorigin="anonymous"></script>
+<script src="js/portfolio.js"></script>
 </html>
