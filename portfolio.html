@@ -40,18 +40,21 @@
         </div>
     </nav>
 
+    <div class="popup-container">
+        <div class="popup">
+            <button class="close-popup" onclick="new Popup().close()"><i class="fa-solid fa-xmark fa-xxl"></i></button>
+            <h1>This is a popup</h1>
+            <img src="img/e-musicbase.png">
+            <h3>Details : </h3>
+        </div>
+    </div>
+
     <div id="work-container">
         <h1>My Works</h1>
 
         <h3>In Compagny</h3>
         <div class="box-container">
-            <div class="popup">
-                <button class="close-popup" onclick="hidePopup()"><i class="fa-solid fa-xmark fa-xxl"></i></button>
-                <h1>This is a popup</h1>
-                <img src="img/e-musicbase.png">
-                <h3>Details : </h3>
-            </div>
-            <div class="work-box" onclick="openPopup()">
+            <div class="work-box" onclick='new Popup("Monitoring Tool", "veille", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum ornare commodo. Aliquam venenatis massa eget pellentesque cursus. Proin finibus lacus vel velit auctor, id consequat enim commodo. Quisque at rutrum erat. Phasellus at dolor convallis ligula finibus pharetra. Mauris ac ex tincidunt, laoreet velit at, ornare erat. Sed pharetra ante non lorem venenatis gravida. Morbi rutrum velit sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ante lorem, tempus vel justo sed, aliquam mollis justo. Sed in rhoncus eros. Nam et aliquam elit. Sed condimentum facilisis neque, sit amet semper ex porta non. Nunc placerat suscipit ipsum, et vulputate eros ultricies nec. Aenean efficitur eu urna vel pretium.").open()'>
                 <img src="img/veille.png" alt="monitoring image">
                 <div class="work-box-text">
                     <h2>Monitoring tool</h2>
@@ -83,48 +86,43 @@
                 </div>
             </div>
         </div>
-        <h3>Personnal Work (FiveM)</h3>
+
+        <h3>In Compagny</h3>
         <div class="box-container">
-            <div class="work-box">
-                <img src="img/Xel_F5.png" alt="Xel_F5">
+            <div class="work-box" onclick='new Popup("Monitoring Tool", "veille").open()'>
+                <img src="img/veille.png" alt="monitoring image">
                 <div class="work-box-text">
-                    <h2>Xel_F5</h2>
-                    <p>A free personal menu for FiveM made with RageUI to improve gameplay.</p>
+                    <h2>Monitoring tool</h2>
+                    <p>A entire monitoring tool with preview and comment to keep the employee informed</p>
                 </div>
             </div>
 
             <div class="work-box">
-                <img src="img/Xel_Blanchisseur.png" alt="Xel_Blanchisseur">
+                <img src="img/shared%20app.png" alt="shared app image">
                 <div class="work-box-text">
-                    <h2>Xel_Blanchisseur</h2>
-                    <p>This script allows the player to launder money. Made with RageUI.</p>
+                    <h2>Shared App</h2>
+                    <p>It is a sharing tool to help the communication of files between prospects and salespeople</p>
                 </div>
             </div>
 
             <div class="work-box">
-                <img src="img/Xel_Showroom.png" alt="Xel_Showroom">
+                <img src="img/analytics.png" alt="analytics of shared app">
                 <div class="work-box-text">
-                    <h2>Xel_ShowRoom</h2>
-                    <p>This script is for present specific vehicle on a point like car dealer or other place. Made with RageUI. </p>
+                    <h2>Shared App Analytics</h2>
+                    <p>This tools allow employee to see the different data linked to the shared app with click tracker</p>
                 </div>
             </div>
 
             <div class="work-box">
-                <img src="img/Xel_Location.png" alt="Xel_Location">
+                <img src="img/e-musicbase.png" alt="analytics of shared app">
                 <div class="work-box-text">
-                    <h2>Xel_Location</h2>
-                    <p>A rent system for multiple vehicle : car / motorcycle / jet-ski. Made with RageUI. </p>
-                </div>
-            </div>
-
-            <div class="work-box">
-                <img src="img/Xel_Shop.png" alt="Xel_Shop">
-                <div class="work-box-text">
-                    <h2>Xel_Shop</h2>
-                    <p>My first FiveM script just a shop for buy item. Made with RageUI. </p>
+                    <h2>Project E-Music</h2>
+                    <p>E-Music is a website for a muscial school that allow member to manage what they want to do in the school</p>
                 </div>
             </div>
         </div>
+
+
     </div>
 
 </body>
