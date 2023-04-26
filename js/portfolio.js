@@ -1,3 +1,5 @@
+let index = 0
+let globalImgSrc = []
 class Popup {
     constructor(title, imgSrc, description) {
         this._popup = document.querySelector(".popup-container");
@@ -5,7 +7,10 @@ class Popup {
         this.title = document.querySelector('.popup > h1');
         this.title.textContent = title;
         this.img = document.querySelector('.popup > img');
-        this.img.src = `./img/${imgSrc}.png`;
+        if (imgSrc) {
+            globalImgSrc = imgSrc
+            this.img.src = `./img/${imgSrc[index]}.png`;
+        }
         this.desc = document.querySelector('.popup > h3');
         this.desc.textContent = description;
     }
@@ -19,6 +24,8 @@ class Popup {
 
     close() {
         console.log('close');
+        globalImgSrc = []
+        index = 0
         this._popup.classList.remove('popup_opened');
         this._popup.animate([{ opacity : "1"}, {opacity : "0"}], {duration: 350, fill: "forwards"});
         setTimeout(() => {
@@ -39,5 +46,18 @@ class Popup {
             this.close();
         }
         });
+    }
+}
+
+function changeImage(value) {
+    if (globalImgSrc) {
+        if (value === false && index < globalImgSrc.length - 1) {
+            index++;
+        } else if (value === true && index > 0) {
+            index--;
+        }
+        console.log(index)
+        let img= document.querySelector('.popup > img');
+        img.src = `./img/${globalImgSrc[index]}.png`;
     }
 }

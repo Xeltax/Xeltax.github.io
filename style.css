@@ -45,7 +45,7 @@ li > a{
 }
 
 nav:hover{
-    width: 8%;
+    width: 9%;
 }
 
 nav:hover .hide-or-show-text {
@@ -87,7 +87,8 @@ nav:hover .hide-or-show-text {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 500px;
+    margin-right: 700px;
+    user-select: none;
 }
 
 .name-animation{
@@ -107,6 +108,7 @@ nav:hover .hide-or-show-text {
     color: white;
     font-size: 20px;
     margin: 0 0 0 24px;
+    user-select: none;
 }
 
 #particles-js {
@@ -236,14 +238,14 @@ nav:hover .hide-or-show-text {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    transition: 1s;
+    transition: 0.5s;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .box-container > .work-box:hover{
     transform: scale(1.08);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .box-container > .work-box > img{
@@ -372,11 +374,29 @@ h1 {
     width: 100%;
 }
 
+#arrow-placement {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+}
+
+#arrow-placement > i {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    background: rgba(37, 37, 37, 0.67);
+    border-radius: 50%;
+    padding: 8px 8px;
+}
+
 .popup > h3 {
     align-self: flex-start;
     color: white;
     margin: 12px 0 0 0;
     font-size: 15px;
+    font-weight: 200;
 }
 
 .popup > button {

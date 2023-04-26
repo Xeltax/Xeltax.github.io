@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Xeltax | Portfolio</title>
+    <title>Clément Honoré | Portfolio</title>
     <link rel="icon" href="img/Xeltax-Logo.png" type="image/png">
     <link rel="stylesheet" href="./style.css">
     <style>
@@ -18,11 +18,11 @@
         <ul>
             <div class="nav-detail">
                 <a href="index.html"><i class="fa-solid fa-house fa-lg"></i></a>
-                <li class="hide-or-show-text"><a href="index.html">Home</a></li>
+                <li class="hide-or-show-text"><a href="index.html">Accueil</a></li>
             </div>
             <div class="nav-detail">
                 <a href="skills.html"><i class="fa-solid fa-code fa-lg"></i></a>
-                <li class="hide-or-show-text"><a href="skills.html">Skills</a></li>
+                <li class="hide-or-show-text"><a href="skills.html">Compétence</a></li>
             </div>
             <div class="nav-detail">
                 <a href="portfolio.html"><i class="fa-solid fa-book fa-lg"></i></a>
@@ -30,7 +30,7 @@
             </div>
             <div class="nav-detail">
                 <a href="contact.html"><i class="fa-solid fa-envelope fa-lg"></i></a>
-                <li class="hide-or-show-text"><a href="contact.html">Contact</a></li>
+                <li class="hide-or-show-text"><a href="contact.html">Contacte</a></li>
             </div>
         </ul>
         <div id="other-link-nav">
@@ -46,42 +46,66 @@
             <h1>This is a popup</h1>
             <img src="img/e-musicbase.png">
             <h3>Details : </h3>
+            <div id="arrow-placement">
+                <i class="fa-solid fa-arrow-left fa-xxl" onclick="changeImage(true)"></i>
+                <i class="fa-solid fa-arrow-right fa-xxl" onclick="changeImage(false)"></i>
+            </div>
         </div>
     </div>
 
     <div id="work-container">
-        <h1>My Works</h1>
+        <h1>Projets Réalisés</h1>
 
-        <h3>In Compagny</h3>
+        <h3>En entreprise</h3>
         <div class="box-container">
-            <div class="work-box" onclick='new Popup("Monitoring Tool", "veille", "The monitoring tool allows employees to add content that they find interesting" +
-             " and related to their work. This allows everyone to stay informed about the developments in their field. A commenting system has been set up which" +
-              " allows them to interact and debate on the subject").open()'>
+            <div class="work-box" onclick="new Popup('Outil de veille', ['veille2', 'veille', 'veille3', 'veille4'], `L'outil de veille permet aux employés d'ajouter du contenu qu'ils jugent intéressant` +
+            ` et en rapport avec leur travail. Cela permet à chacun de rester informé des développements dans son domaine et de tenir informer les autres. Un système de commentaires a été mis en place qui` +
+                ` leur permet d'interagir et de débattre sur le sujet`).open()">
                 <img src="img/veille.png" alt="monitoring image">
                 <div class="work-box-text">
-                    <h2>Monitoring tool</h2>
-                    <p>A entire monitoring tool with preview and comment to keep the employee informed</p>
+                    <h2>Outil de veille</h2>
+                    <p>Un outil de veille complet avec prévisualisation et commentaires pour tenir les employés informés</p>
                 </div>
             </div>
 
-            <div class="work-box" onclick='new Popup("Shared App", "shared%20app", "Shared app is an application that allows sales people to send their document" +
-             " to the prospect more easily. Indeed, all this happens directly through the internal platform in the company which also helps in the security of the" +
-              " transfer. The prospects have a download link with a file that contains everything that the sales person wants to send.").open()'>
-                <img src="img/shared%20app.png" alt="shared app image">
+            <div class="work-box" onclick="new Popup('App de partage', ['sharedapp', 'sharedapp2', 'sharedapp3', 'sharedapp4', 'sharedapp5'], `L'application partagée est une application qui permet aux vendeurs d'envoyer plus facilement leur document` +
+            ` au prospect. En effet, tout cela se fait directement via la plateforme interne de l'entreprise, ce qui contribue également à la sécurité du ` + ` transfert. ` +
+            ` Les prospects disposent d'un lien de téléchargement avec un fichier qui contient tout ce que le commercial veut envoyer.`).open()">
+                <img src="img/sharedapp.png" alt="shared app image">
                 <div class="work-box-text">
-                    <h2>Shared App</h2>
-                    <p>It is a sharing tool to help the communication of files between prospects and salespeople</p>
+                    <h2>App de partage</h2>
+                    <p>Il s'agit d'un outil de partage qui facilite la communication de fichiers entre les prospects et les vendeurs.</p>
                 </div>
             </div>
 
-            <div class="work-box" onclick='new Popup("Shared App Analytics", "analytics", "Shared app analytics, allows to have a direct follow-up on the different" +
-             " shared apps. It allows to know the number of clicks made, the number of times the documents are opened, if they were shared. Having this type of data" +
-              " is very useful to know if the prospect is interested in the offer or not. Analytics is available to sales people directly on the application they" +
-               " have created for their prospect.").open()'>
+            <div class="work-box" onclick="new Popup('App de partages donnés analytiques', ['analytics', 'analytics2'], `Shared app analytics, permet d'avoir un suivi direct des différentes ` + ` applications partagées.` +
+            `apps partagées. Elle permet de connaître le nombre de clics effectués, le nombre de fois où les documents sont ouverts, s'ils ont été partagés. Disposer de ce type de données` +
+                 ` est très utile pour savoir si le prospect est intéressé par l'offre ou non. L'analyse est disponible pour les vendeurs directement sur l'application qu'ils ` +
+            ` ont créée pour leur prospect.`).open()">
                 <img src="img/analytics.png" alt="analytics of shared app">
                 <div class="work-box-text">
-                    <h2>Shared App Analytics</h2>
-                    <p>This tools allow employee to see the different data linked to the shared app with click tracker</p>
+                    <h2>App de partages donnés analytiques</h2>
+                    <p>Cet outil permet à l'employé de voir les différentes données liées à l'application de partage. Plusieurs données statistiques permettent de connaitre l'intéressement pour le contrat.</p>
+                </div>
+            </div>
+
+            <div class="work-box" onclick="new Popup('Applications de traductions', ['apptrad2', 'apptrad', 'apptrad3'], `Cet outil permet de centraliser les projets ainsi que les traductions liées à celui-ci`+
+            `Grâce à une association de clé valeur et une arborescence du projet il est possible de modifier la valeur des clés pour chaque langue et donc de traduire le site via une application centralisée`+
+            `Une fois la traduction du projet réalisé une API permet de faire le lien entre les traductions effectué et le site / projet en question à traduire.`).open()">
+                <img src="img/apptrad.png" alt="App Trad">
+                <div class="work-box-text">
+                    <h2>Applications de traductions</h2>
+                    <p>Cet outil permet au développeur ou aux admins de site de pouvoir traduire leur site dans plusieurs langues. Grâce à de nombreux champs la personne va pouvoir traduire son application.</p>
+                </div>
+            </div>
+
+            <div class="work-box" onclick="new Popup('Composant REACT', ['composant4', 'composant5', 'composant6', 'composant3', 'composant2', 'composant'], `Dans le cadre de la création de l'application de traductions`+
+            `j'ai réalisé de nombreux composants en react réutilisable et modulable. Du simple bouton au calendrier j'ai réalisé au total une dizaine de composant qui permettent d'être modulé facilement et augmente donc`+
+            `l'efficacité des développeurs pour les prochains projets. Cela m'a permis de me familiariser avec REACT et NextJS et de découvrir une autre façon de coder du WEB.`).open()">
+                <img src="img/composant5.png" alt="App Trad">
+                <div class="work-box-text">
+                    <h2>Composant REACT</h2>
+                    <p>Afin de réaliser un futur projet ainsi que pour l'applications de traductions nous avions besoin de composant REACT. J'ai donc appris à maitriser REACT et NextJS pour pouvoir le faire.</p>
                 </div>
             </div>
 
@@ -94,37 +118,24 @@
             </div>
         </div>
 
-        <h3>In Compagny</h3>
+        <h3>Projet Personnel</h3>
         <div class="box-container">
-            <div class="work-box" onclick='new Popup("Monitoring Tool", "veille").open()'>
-                <img src="img/veille.png" alt="monitoring image">
+            <div class="work-box" onclick="new Popup('Sidéra Rôleplay', ['sidera1', 'sidera2'], `Sidéra et un projet de serveur rôleplay multijoueur sur FiveM comptant une centaine de joueurs. Il permet au joueur`+
+            `d'incarner plusieurs rôles dans une grande ville (Policier, Médecin, Avocat, Garagiste, Concessionnaire, Braqueur, Voleur etc.). Mon rôle a donc été de créer la possibilité pour les joueurs de jouer ses rôles, en ajoutant de l'interaction,` +
+            ` des missions, des possibilités d'échange. Tout cela passe par des scripts que j'ai développé en language LUA avec le framework ESX.`).open()">
+                <img src="img/sidera.png" alt="Sidera RP">
                 <div class="work-box-text">
-                    <h2>Monitoring tool</h2>
-                    <p>A entire monitoring tool with preview and comment to keep the employee informed</p>
+                    <h2>Sidéra Rôleplay</h2>
+                    <p>Sidéra est un serveur multijoueur sur le jeu FiveM utilisant GTA 5 afin de permettrent sa modifications et la création de script sur celui-ci. Sidéra à pour but de permettrent au joueur de jouer un rôle dans le jeu.</p>
                 </div>
             </div>
 
-            <div class="work-box">
-                <img src="img/shared%20app.png" alt="shared app image">
+            <div class="work-box" onclick="new Popup('Legacy OX', ['legacyox'], `Ce projet permet aux personnes n'ayant pas de connaissance en développement de pouvoir créer leur propre serveur de jeu avec les dernières nouveautés et mise à jour. ` +
+            `Toutes les semaines je fais une mise à jour de la base en ajoutant de nouveau script, ou bien en réglant des bugs remontés par les utilisateurs. C'est un projet enrichissant car j'apprends à répondre aux besoins des utilisateurs.`).open()">
+                <img src="img/legacyox.png" alt="Legacy OX">
                 <div class="work-box-text">
-                    <h2>Shared App</h2>
-                    <p>It is a sharing tool to help the communication of files between prospects and salespeople</p>
-                </div>
-            </div>
-
-            <div class="work-box">
-                <img src="img/analytics.png" alt="analytics of shared app">
-                <div class="work-box-text">
-                    <h2>Shared App Analytics</h2>
-                    <p>This tools allow employee to see the different data linked to the shared app with click tracker</p>
-                </div>
-            </div>
-
-            <div class="work-box">
-                <img src="img/e-musicbase.png" alt="analytics of shared app">
-                <div class="work-box-text">
-                    <h2>Project E-Music</h2>
-                    <p>E-Music is a website for a muscial school that allow member to manage what they want to do in the school</p>
+                    <h2>Legacy OX</h2>
+                    <p>Legacy OX est une base template pour les personnes souhaitant créer leur serveur. Mon idée est de permettre au personne souhaitant créer leur serveur mais n'ayant pas de connaissance en développement de pouvoir le faire</p>
                 </div>
             </div>
         </div>
