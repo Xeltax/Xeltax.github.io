@@ -29,8 +29,16 @@
                 <li class="hide-or-show-text"><a href="portfolio.html">Portfolio</a></li>
             </div>
             <div class="nav-detail">
+                <a href="veille.html"><i class="fa-solid fa-eye fa-lg"></i></a>
+                <li class="hide-or-show-text"><a href="veille.html">Veille</a></li>
+            </div>
+            <div class="nav-detail">
+                <a href="certification.html"><i class="fa-solid fa-graduation-cap"></i></a>
+                <li class="hide-or-show-text"><a href="certification.html">Certification</a></li>
+            </div>
+            <div class="nav-detail">
                 <a href="contact.html"><i class="fa-solid fa-envelope fa-lg"></i></a>
-                <li class="hide-or-show-text"><a href="contact.html">Contacte</a></li>
+                <li class="hide-or-show-text"><a href="contact.html">Contact</a></li>
             </div>
         </ul>
         <div id="other-link-nav">
@@ -46,6 +54,8 @@
             <h1>This is a popup</h1>
             <img src="img/e-musicbase.png">
             <h3>Details : </h3>
+            <h2>Compétence mise en oeuvre :</h2>
+            <p>- Compétence</p>
             <div id="arrow-placement">
                 <i class="fa-solid fa-arrow-left fa-xxl" onclick="changeImage(true)"></i>
                 <i class="fa-solid fa-arrow-right fa-xxl" onclick="changeImage(false)"></i>
@@ -60,7 +70,7 @@
         <div class="box-container">
             <div class="work-box" onclick="new Popup('Outil de veille', ['veille2', 'veille', 'veille3', 'veille4'], `L'outil de veille permet aux employés d'ajouter du contenu qu'ils jugent intéressant` +
             ` et en rapport avec leur travail. Cela permet à chacun de rester informé des développements dans son domaine et de tenir informer les autres. Un système de commentaires a été mis en place qui` +
-                ` leur permet d'interagir et de débattre sur le sujet`).open()">
+                ` leur permet d'interagir et de débattre sur le sujet`, `- Répondre aux incidents et aux demandes d’assistance et d’évolution <br> - Travailler en mode projet  <br> - Mettre à disposition des utilisateurs un service informatique`).open()">
                 <img src="img/veille.png" alt="monitoring image">
                 <div class="work-box-text">
                     <h2>Outil de veille</h2>
@@ -70,7 +80,7 @@
 
             <div class="work-box" onclick="new Popup('App de partage', ['sharedapp', 'sharedapp2', 'sharedapp3', 'sharedapp4', 'sharedapp5'], `L'application partagée est une application qui permet aux vendeurs d'envoyer plus facilement leur document` +
             ` au prospect. En effet, tout cela se fait directement via la plateforme interne de l'entreprise, ce qui contribue également à la sécurité du ` + ` transfert. ` +
-            ` Les prospects disposent d'un lien de téléchargement avec un fichier qui contient tout ce que le commercial veut envoyer.`).open()">
+            ` Les prospects disposent d'un lien de téléchargement avec un fichier qui contient tout ce que le commercial veut envoyer.`, `- Gérer le patrimoine informatique <br> - Répondre aux incidents et aux demandes d’assistance et d’évolution <br> - Travailler en mode projet <br> - Mettre à disposition des utilisateurs un service informatique`).open()">
                 <img src="img/sharedapp.png" alt="shared app image">
                 <div class="work-box-text">
                     <h2>App de partage</h2>
@@ -81,7 +91,7 @@
             <div class="work-box" onclick="new Popup('App de partages donnés analytiques', ['analytics', 'analytics2'], `Shared app analytics, permet d'avoir un suivi direct des différentes ` + ` applications partagées.` +
             `apps partagées. Elle permet de connaître le nombre de clics effectués, le nombre de fois où les documents sont ouverts, s'ils ont été partagés. Disposer de ce type de données` +
                  ` est très utile pour savoir si le prospect est intéressé par l'offre ou non. L'analyse est disponible pour les vendeurs directement sur l'application qu'ils ` +
-            ` ont créée pour leur prospect.`).open()">
+            ` ont créée pour leur prospect.`, `- Gérer le patrimoine informatique <br> - Répondre aux incidents et aux demandes d’assistance et d’évolution <br> - Travailler en mode projet <br> - Mettre à disposition des utilisateurs un service informatique`).open()">
                 <img src="img/analytics.png" alt="analytics of shared app">
                 <div class="work-box-text">
                     <h2>App de partages donnés analytiques</h2>
@@ -90,8 +100,9 @@
             </div>
 
             <div class="work-box" onclick="new Popup('Applications de traductions', ['apptrad2', 'apptrad', 'apptrad3'], `Cet outil permet de centraliser les projets ainsi que les traductions liées à celui-ci`+
-            `Grâce à une association de clé valeur et une arborescence du projet il est possible de modifier la valeur des clés pour chaque langue et donc de traduire le site via une application centralisée`+
-            `Une fois la traduction du projet réalisé une API permet de faire le lien entre les traductions effectué et le site / projet en question à traduire.`).open()">
+            ` Grâce à une association de clé valeur et une arborescence du projet il est possible de modifier la valeur des clés pour chaque langue et donc de traduire le site via une application centralisée`+
+            ` Une fois la traduction du projet réalisé une API permet de faire le lien entre les traductions effectué et le site / projet en question à traduire.`,
+            `- Gérer le patrimoine informatique <br> - Répondre aux incidents et aux demandes d’assistance et d’évolution <br> - Développer la présence en ligne de l’organisation <br> - Travailler en mode projet`).open()">
                 <img src="img/apptrad.png" alt="App Trad">
                 <div class="work-box-text">
                     <h2>Applications de traductions</h2>
@@ -100,20 +111,35 @@
             </div>
 
             <div class="work-box" onclick="new Popup('Composant REACT', ['composant4', 'composant5', 'composant6', 'composant3', 'composant2', 'composant'], `Dans le cadre de la création de l'application de traductions`+
-            `j'ai réalisé de nombreux composants en react réutilisable et modulable. Du simple bouton au calendrier j'ai réalisé au total une dizaine de composant qui permettent d'être modulé facilement et augmente donc`+
-            `l'efficacité des développeurs pour les prochains projets. Cela m'a permis de me familiariser avec REACT et NextJS et de découvrir une autre façon de coder du WEB.`).open()">
-                <img src="img/composant5.png" alt="App Trad">
+            ` j'ai réalisé de nombreux composants en react réutilisable et modulable. Du simple bouton au calendrier j'ai réalisé au total une dizaine de composant qui permettent d'être modulé facilement et augmente donc`+
+            ` l'efficacité des développeurs pour les prochains projets. Cela m'a permis de me familiariser avec REACT et NextJS et de découvrir une autre façon de coder du WEB.`,
+            `- Gérer le patrimoine informatique <br> - Répondre aux incidents et aux demandes d’assistance et d’évolution <br> - Organiser son développement professionnel`).open()">
+                <img src="img/composant4.png" alt="App Trad">
                 <div class="work-box-text">
                     <h2>Composant REACT</h2>
                     <p>Afin de réaliser un futur projet ainsi que pour l'applications de traductions nous avions besoin de composant REACT. J'ai donc appris à maitriser REACT et NextJS pour pouvoir le faire.</p>
                 </div>
             </div>
 
-            <div class="work-box">
-                <img src="img/e-musicbase.png" alt="analytics of shared app">
+            <div class="work-box" onclick="new Popup('E-Music', ['e-musicbase', 'e-music 2', 'e-music3', 'e-music 4'], `Dans le cadre de la création de l'application de traductions`+
+            `j'ai réalisé de nombreux composants en react réutilisable et modulable. Du simple bouton au calendrier j'ai réalisé au total une dizaine de composant qui permettent d'être modulé facilement et augmente donc`+
+            `l'efficacité des développeurs pour les prochains projets. Cela m'a permis de me familiariser avec REACT et NextJS et de découvrir une autre façon de coder du WEB.`,
+            `- Développer la présence en ligne de l’organisation <br> - Travailler en mode projet <br> - Mettre à disposition des utilisateurs un service informatique`).open()">
+                <img src="img/e-music.png" alt="e-music">
                 <div class="work-box-text">
                     <h2>Project E-Music</h2>
-                    <p>E-Music is a website for a muscial school that allow member to manage what they want to do in the school</p>
+                    <p>E-Music est un site web permettant la gestion de l'école de musique d'IFS. Les inscriptions à celle-ci ou au cour, les locations, le planning des cours et bien d'autre. Cela permet de centraliser les besoins des élèves de l'école.</p>
+                </div>
+            </div>
+
+            <div class="work-box" onclick="new Popup('PlanIt PokerStar', ['plan-itPoker', 'plan-itPoker 2', 'plan-itPoker 3'], `PlanIt PokerStar est un projet utilisant NextJS`+
+            ` il a pour but de créer une application dans le même esprit que Plan-It Poker mais en ajoutant des fonctionnalités qui pour nous étaient manquante.`+
+            ` L'objectif à la fin du projet est d'avoir l'application web accessible à tous ainsi qu'une application mobile pour faciliter l'utilisation en déplacement par exemple.`,
+            `- Travailler en mode projet <br> - Mettre à disposition des utilisateurs un service informatique`).open()">
+                <img src="img/plan-itPoker.png" alt="PlanIt PokerStar">
+                <div class="work-box-text">
+                    <h2>Project PlanIt PokerStar</h2>
+                    <p>PlanIt PokerStar est basé sur le concept de Plan-It Poker, permettre à une équipe de se rassembler et voter pour des points d'histoire à attribuer à des user stories.</p>
                 </div>
             </div>
         </div>
@@ -121,8 +147,9 @@
         <h3>Projet Personnel</h3>
         <div class="box-container">
             <div class="work-box" onclick="new Popup('Sidéra Rôleplay', ['sidera1', 'sidera2'], `Sidéra et un projet de serveur rôleplay multijoueur sur FiveM comptant une centaine de joueurs. Il permet au joueur`+
-            `d'incarner plusieurs rôles dans une grande ville (Policier, Médecin, Avocat, Garagiste, Concessionnaire, Braqueur, Voleur etc.). Mon rôle a donc été de créer la possibilité pour les joueurs de jouer ses rôles, en ajoutant de l'interaction,` +
-            ` des missions, des possibilités d'échange. Tout cela passe par des scripts que j'ai développé en language LUA avec le framework ESX.`).open()">
+            ` d'incarner plusieurs rôles dans une grande ville (Policier, Médecin, Avocat, Garagiste, Concessionnaire, Braqueur, Voleur etc.). Mon rôle a donc été de créer la possibilité pour les joueurs de jouer ses rôles, en ajoutant de l'interaction,` +
+            ` des missions, des possibilités d'échange. Tout cela passe par des scripts que j'ai développé en language LUA avec le framework ESX.`,
+            `- Répondre aux incidents et aux demandes d’assistance et d’évolution <br> - Travailler en mode projet <br> - Mettre à disposition des utilisateurs un service informatique <br> - Gérer le patrimoine informatique`).open()">
                 <img src="img/sidera.png" alt="Sidera RP">
                 <div class="work-box-text">
                     <h2>Sidéra Rôleplay</h2>
@@ -131,7 +158,8 @@
             </div>
 
             <div class="work-box" onclick="new Popup('Legacy OX', ['legacyox'], `Ce projet permet aux personnes n'ayant pas de connaissance en développement de pouvoir créer leur propre serveur de jeu avec les dernières nouveautés et mise à jour. ` +
-            `Toutes les semaines je fais une mise à jour de la base en ajoutant de nouveau script, ou bien en réglant des bugs remontés par les utilisateurs. C'est un projet enrichissant car j'apprends à répondre aux besoins des utilisateurs.`).open()">
+            `Toutes les semaines je fais une mise à jour de la base en ajoutant de nouveau script, ou bien en réglant des bugs remontés par les utilisateurs. C'est un projet enrichissant car j'apprends à répondre aux besoins des utilisateurs.`,
+            `- Répondre aux incidents et aux demandes d’assistance et d’évolution <br> - Travailler en mode projet <br> - Mettre à disposition des utilisateurs un service informatique <br> - Gérer le patrimoine informatique`).open()">
                 <img src="img/legacyox.png" alt="Legacy OX">
                 <div class="work-box-text">
                     <h2>Legacy OX</h2>

@@ -1,7 +1,7 @@
 let index = 0
 let globalImgSrc = []
 class Popup {
-    constructor(title, imgSrc, description) {
+    constructor(title, imgSrc, description, competence) {
         this._popup = document.querySelector(".popup-container");
         this._handleEscClose = this._handleEscClose.bind(this);
         this.title = document.querySelector('.popup > h1');
@@ -13,6 +13,8 @@ class Popup {
         }
         this.desc = document.querySelector('.popup > h3');
         this.desc.textContent = description;
+        this.competence = document.querySelector('.popup > p');
+        this.competence.innerHTML = competence;
     }
 
     open() {

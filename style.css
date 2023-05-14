@@ -45,7 +45,7 @@ li > a{
 }
 
 nav:hover{
-    width: 9%;
+    width: 10%;
 }
 
 nav:hover .hide-or-show-text {
@@ -154,6 +154,29 @@ nav:hover .hide-or-show-text {
     margin-top: 10px;
 }
 
+#skill-button {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #212121;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#skill-button:active {
+    transform: scale(0.9);
+}
+
 #right-skills-container {
     width: 50%;
     padding-top: 5%;
@@ -256,6 +279,129 @@ nav:hover .hide-or-show-text {
 .box-container > .work-box > .work-box-text{
     color: white;
 }
+
+/*Css de la page de veille*/
+
+#veille-container {
+    margin: 0 64px 0 128px;
+}
+
+#veille-container> h2 {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.veille-tool {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.veille-tool-box {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.veille-tool-box > img {
+    width: 150px;
+    align-self: center;
+}
+
+.veille-tool-box > p {
+    color: white;
+}
+
+.veille-tool-box > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    margin-left: 16px;
+}
+
+.veille-tool-box > ul > li::before {
+    content: "- ";
+}
+
+/*Css de la page de certification*/
+
+#certif-container {
+    margin: 0 64px 0 128px;
+}
+
+.certif-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.certif-box {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: #494949;
+    padding: 8px;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.5s;
+}
+
+.certif-box:last-child {
+    margin-bottom: 32px;
+}
+
+.certif-box > img {
+    width: 200px;
+}
+
+.certif-box > h2 {
+    color: white;
+}
+
+.certif-box > i {
+    font-size: 3rem;
+}
+
+.certif-box:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+.certif-detail {
+    color: white;
+}
+
+.certif-detail > h2 {
+}
+
+.certif-detail > .certif-detail-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.certif-detail-text > a {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
 
 /*Css de la page de contact*/
 
@@ -376,7 +522,7 @@ h1 {
 
 #arrow-placement {
     position: absolute;
-    top: 50%;
+    top: 40%;
     display: flex;
     justify-content: space-between;
     width: 93%;
@@ -399,6 +545,22 @@ h1 {
     font-weight: 200;
 }
 
+.popup > h2 {
+    align-self: flex-start;
+    color: white;
+    margin: 12px 0 0 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.popup > p {
+    align-self: flex-start;
+    color: white;
+    margin: 12px 0 0 0;
+    font-size: 15px;
+    font-weight: 200;
+}
+
 .popup > button {
     background: none;
     border: none;
@@ -407,4 +569,85 @@ h1 {
     position: absolute;
     right: 5px;
     font-size: 1.5em;
+}
+
+/*Css de la timeLine*/
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: #494949;
+    -webkit-box-shadow: 5px 5px 10px #494949, -5px -5px 10px #494949;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    color: white;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.timeline-content > .date {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-content > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.timeline-component {
+    margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+        position: relative;
+        background-color: #494949;
+        width: 5px;
+        height: 100%;
+    }
+    .main-middle {
+        opacity: 0;
+    }
+    .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #494949;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
 }
