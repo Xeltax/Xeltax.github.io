@@ -264,6 +264,7 @@ nav:hover .hide-or-show-text {
     transition: 0.5s;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .box-container > .work-box:hover{
